@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background Colour Change</title>
+
+<script>
+        function colorChange(){
+        document.body.style.backgroundColor = document.ColorForm.bg_color.value;
+        }
+</script>
+</head>
+<body>
+    <form action="" name="ColorForm" method="POST" onsubmit="colorChange()">
+        <label>Background Color :</label> <input type="text" name="bg_color" placeholder="Background Color"/>
+        <button type="button" onclick="colorChange()">Submit</button>
+    </form>
+
+</body>
+</html>
