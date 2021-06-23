@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON Demo</title>
+ 
+</head>
+<body>
+    <p id="object"></p>
+    <p id="json"></p>
+    <script>  
+            // parse() - Used to convert JSON into Object 
+            var txt = '{"name":"John", "age":30, "city":"New York"}' //JSON 
+            var obj = JSON.parse(txt);
+            document.getElementById("object").innerHTML = obj.name + ", " + obj.age;
+
+            //stringify() - Used to convert Object into JSON
+            var obj = {name: "John", 
+            age: 30, 
+            city: "New York"}; // Object
+            var myJSON = JSON.stringify(obj);
+            document.getElementById("json").innerHTML = myJSON; 
+    </script>
+</body>
+</html>
